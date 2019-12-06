@@ -26,6 +26,16 @@ body{
     color: #FF3754;
 }
 
+.section-title{
+    font-size: 70px;
+    line-height: 70px;
+}
+
+.section-title2{
+    font-size: 40px;
+    line-height: 40px;
+    color: #888888;
+}
 
 .background-section-1{
     background: url("../images/background1.png") no-repeat center top;
@@ -542,7 +552,8 @@ footer{
     }
     .section-title2{
         color: #888888;
-        font-size: 40px;
+        font-size: 30px;
+        line-height: 30px;
     }
     .carousel-image{
         max-width: 300px;
