@@ -89,8 +89,10 @@ header{
             display: block;
             width: 24px;
             height: 24px;
+            margin-right: 10px;
         }
         .number{
+            display: flex;
             font-family: "Museo Sans Cyrl 700";
             font-size: 24px;
         }
