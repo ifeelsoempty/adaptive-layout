@@ -63,7 +63,6 @@ menuButton.addEventListener('click', event =>{
 
 openInfoButtons.forEach(element =>{
     element.addEventListener('click', event =>{
-        console.log(carouselLists[0]);
         if(carouselLists[0].style.display !== 'block'){
             openInfoButtons.forEach(element =>{
                 element.innerText = 'скрыть';
