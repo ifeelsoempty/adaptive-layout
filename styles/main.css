@@ -178,6 +178,7 @@ header{
     }
 
     .winners-list{
+        margin-top: 10px;
         display: flex;
         flex-direction: column;
     }
@@ -190,7 +191,7 @@ header{
         .first-place{
             display: inline-block;
             width: auto;
-            padding: 10px 5px;
+            padding: 5px 5px;
             font-size: 36px;
             border-radius: 4px;
             background: #FF3754;
@@ -234,8 +235,7 @@ header{
         height: 68px;
         max-width: 350px;
         background: #FF3754;
-        margin-top: 120px;
-        margin-bottom: 50px;
+        margin: 120px 0 120px 0;
         border-radius: 4px;
         cursor: pointer;
     }
@@ -305,7 +305,7 @@ header{
                             font-size:13px;
                             letter-spacing: 0.155em;
                         }
-                        .hide-button{
+                        .open-info-button{
                             display: none;
                             font-family: "Museo Sans Cyrl 300";
                             text-align: center;
@@ -321,10 +321,11 @@ header{
                             color: #888888;
                             margin: 50px auto 0 auto;
                         }
-                        .hide-button:hover{
+                        .open-info-button:hover{
                             box-shadow: 2px 2px 10px inset #888888;
                         }
                         .carousel-list{
+                            display: block;
                             margin-top: -20px;
                         }
                         .carousel-list li{
@@ -450,8 +451,6 @@ footer{
         flex-grow: 1;
         align-items: center;
     }
-        .copy-write{
-        }
     .footer-right{
         display: flex;
         flex-grow: 1;
@@ -463,90 +462,243 @@ footer{
             height: 35px;
         }
 
-@media (max-width: 1900px){
-    .main-container{padding: 0 40px}
-    .header-container{margin: 0 -40px}
-    .logo-img{margin-left: 50px}
+@media(max-width: 1900px){
+    .main-container{
+        padding: 0 40px;
+    }
+    .header-container{
+        margin: 0 -40px;
+    }
+    .logo-img{
+        margin-left: 50px;
+    }
 }
 
-@media (max-width: 1305px){
-    .carousel-left-image{display: none}
-    .carousel-right-image{display: none}
-    .carousel-image{max-width: 375px;max-height: 375px}
-    .main-content-block{flex-direction: column;align-items: center}
-    .right-content-block{order: 0}
-    .left-content-block{order: 1}
-    .carousel-name{text-align: center}
-    .list-name{text-align: center}
-    .left-content-block{margin-top: 20px}
+@media(max-width: 1305px){
+    .carousel-left-image{
+        display: none;
+    }
+    .carousel-right-image{
+        display: none;
+    }
+    .carousel-image{
+        max-width: 375px;
+        max-height: 375px;
+    }
+    .main-content-block{
+        flex-direction: column;
+        align-items: center;
+    }
+    .right-content-block{
+        order: 0;
+    }
+    .left-content-block{
+        order: 1;
+    }
+    .carousel-name{
+        text-align: center;
+    }
+    .list-name{
+        text-align: center;
+    }
+    .left-content-block{
+        margin-top: 20px;
+    }
 }
 
-@media (max-width: 1200px){
-    .section1-button{margin-top: 10px}
-    .inst {display: none}
-    .vk {display: none}
-    .number {display: none}
-    .number-image {display: none}
-    .menu-inst{display: block}
-    .menu-vk{display: block}
-    .menu-number{display: block}
-    .menu-number-image{display: block}
-    .menu-and-contacts {margin-right: 0}
-    .section-title{font-size: 60px}
-    .carousel-image{max-width: 300px;max-height: 300px}
+@media(max-width: 1200px){
+    .section1-button{
+        margin-top: 50px;
+    }
+    .inst{
+        display: none;
+    }
+    .vk{
+        display: none;
+    }
+    .number{
+        display: none;
+    }
+    .number-image{
+        display: none;
+    }
+    .menu-inst{
+        display: block;
+    }
+    .menu-vk{
+        display: block;
+    }
+    .menu-number{
+        display: block;
+    }
+    .menu-number-image{
+        display: block;
+    }
+    .menu-and-contacts{
+        margin-right: 0;
+    }
+    .section-title{
+        font-size: 60px;
+    }
+    .section-title2{
+        color: #888888;
+        font-size: 40px;
+    }
+    .carousel-image{
+        max-width: 300px;
+        max-height: 300px;
+    }
 }
 
-@media (max-width: 600px){
-    .menu-button{order: 1}
-    .winners-list{order: 1}
-    .first-place{color: #ffffff}
-    .background-section-1{background: none}
-    .winners-list {color: black}
-    .section-2{margin-top: 40px}
-    .section1-button{margin: 20px auto}
-    .first-place{padding: 5px 2px}
-    .adaptive-background{background: url("../images/background1.png") no-repeat center top;background-size: cover;margin: 0 -40px;padding: 0 20px}
+@media(max-width: 600px){
+    .menu-button{
+        order: 1;
+    }
+    .winners-list{
+        order: 1;
+    }
+    .first-place{
+        color: #ffffff;
+    }
+    .background-section-1{
+        background: none;
+    }
+    .winners-list{
+        color: black;
+    }
+    .section-2{
+        margin-top: 40px;
+    }
+    .section1-button{
+        margin: 20px auto;
+    }
+    .adaptive-background{
+        background: url("../images/background1.png") no-repeat center top;
+        background-size: cover;
+        margin: 0 -40px;
+        padding: 0 20px;
+    }
 }
 
-@media (max-width: 550px){
-    .carousel-left{display:none}
-    .carousel-right{display:none}
-    .main-container{padding: 0 20px}
-    .adaptive-background{margin: 0 -20px}
-    .winners{font-size:14px}
-    .first-place{font-size: 20px; margin-top: -1px}
-    .header-container{margin: 0 -20px}
-    .items-image{min-height: 170px}
-    .items{margin-bottom: 30px}
-    .section-title{font-size: 50px}
-    header{height: 90px}
-    .logo-img{margin-left: 20px}
-    menu a{font-size: 30px}
-    menu{height: 509px}
-    menu{margin-top: 80px}
-    .title{font-size: 30px}
-    .main-title{font-size: 60px;line-height: 60px}
-    .carousel-image{max-width: 200px;max-height: 200px}
-    .hide-button{display: block}
-    .selector{margin-top: 20px;}
-    .place-image img{max-width: 30px; max-height: 30px}
-    .place-image{max-width: 30px; max-height: 30px}
-    .carousel-list{display: none}
-    .carousel-title{display: none}
-    .carousel-description{display: none}
+@media(max-width: 550px){
+    header{
+        height: 90px
+    }
+    menu a{
+        font-size: 30px
+    }
+    menu{
+        height: 509px
+    }
+    menu{
+        margin-top: 80px
+    }
+    .carousel-left{
+        display:none
+    }
+    .carousel-right{
+        display:none;
+    }
+    .main-container{
+        padding: 0 20px;
+    }
+    .adaptive-background{
+        margin: 0 -20px;
+    }
+    .winners{
+        font-size:14px;
+    }
+    .first-place{
+        font-size: 20px;
+        margin-top: -1px;
+    }
+    .header-container{
+        margin: 0 -20px;
+    }
+    .items-image{
+        min-height: 170px;
+    }
+    .items{
+        margin-bottom: 30px;
+    }
+    .section-title{
+        font-size: 50px;
+    }
+    .logo-img{
+        margin-left: 20px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .main-title{
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .carousel-image{
+        max-width: 200px;
+        max-height: 200px;
+    }
+    .open-info-button{
+        display: block;
+    }
+    .place-image img{
+        max-width: 30px;
+        max-height: 30px;
+    }
+    .place-image{
+        max-width: 30px;
+        max-height: 30px;
+    }
+    .carousel-list{
+        display: none;
+    }
+    .carousel-title{
+        display: none;
+    }
+    .carousel-description{
+        display: none;
+    }
 }
 
-@media (max-width: 360px){
-    .items-image{min-height: 130px}
-    .section-title{font-size: 40px}
-    header{height: 60px}
-    .logo-img{margin-left: 10px}
-    menu a{font-size: 20px}
-    menu{margin-top: 60px;}
-    .menu-button{margin-right:20px}
-    .carousel-image{width: 128px;height: 128px}
-    .main-title{font-size: 50px;line-height: 50px}
-    .title{font-size: 20px;line-height: 24px}
-    .carousel-image{max-width: 200px;max-height: 200px}
-    .section1-button p{font-size: 16px}
+@media(max-width: 360px){
+    header{
+        height: 60px;
+    }
+    menu{
+        margin-top: 60px;
+    }
+    menu a{
+        font-size: 20px;
+    }
+    .items-image{
+        min-height: 130px;
+    }
+    .section-title{
+        font-size: 40px;
+    }
+    .logo-img{
+        margin-left: 10px;
+    }
+    .menu-button{
+        margin-right:20px;
+    }
+    .carousel-image{
+        width: 128px;
+        height: 128px;
+    }
+    .main-title{
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .title{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .carousel-image{
+        max-width: 200px;
+        max-height: 200px;
+    }
+    .section1-button p{
+        font-size: 15px;
+    }
 }
