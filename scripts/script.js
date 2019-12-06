@@ -1,4 +1,4 @@
-<!-- INITIALIZATION AND ADD CURRENT SLIDE NUMBER -->
+//INITIALIZATION AND ADD CURRENT SLIDE NUMBER
 const glide = new Glide('.glide').mount();
 const slide = document.getElementsByClassName('slide-number')[0];
 
@@ -6,6 +6,7 @@ glide.on('run.after', event =>{
     slide.innerText = glide.index + 1;
 });
 
+//GET ELEMENTS FROM DOM
 const header = document.getElementsByTagName('header')[0];
 const logo = document.getElementsByClassName('logo-img')[0];
 const logoImg = logo.getElementsByTagName('img')[0];
@@ -18,7 +19,7 @@ const carouselLists = [...document.getElementsByClassName('carousel-list')];
 const carouselTitles = [...document.getElementsByClassName('carousel-title')];
 const carouselDescription = [...document.getElementsByClassName('carousel-description')];
 
-<!-- CHANGE MENU WHEN SCROLLING -->
+//CHANGE MENU WHEN SCROLLING
 document.addEventListener('scroll', event =>{
     if(pageYOffset !== 0){
         changeMenuToBlackTheme()
@@ -28,7 +29,7 @@ document.addEventListener('scroll', event =>{
     }
 });
 
-<!-- CHANGE MENU WHEN CLICK MENU BUTTON -->
+//CHANGE MENU WHEN CLICK MENU BUTTON
 menuButton.addEventListener('click', event =>{
    if(menu.style.display === 'flex'){
        menu.style.display = 'none';
@@ -61,6 +62,7 @@ menuButton.addEventListener('click', event =>{
    }
 });
 
+//ADD HIDE/OPEN EVENT FOR BUTTON
 openInfoButtons.forEach(element =>{
     element.addEventListener('click', event =>{
         if(carouselLists[0].style.display !== 'block'){
@@ -93,10 +95,11 @@ openInfoButtons.forEach(element =>{
     });
 });
 
-
+//ADD WHITE MENU WHEN PAGE RELOADED
 if(pageYOffset !== 0){
     changeMenuToBlackTheme();
 }
+
 
 function changeMenuToBlackTheme() {
     header.style.background = '#ffffff';
