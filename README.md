@@ -1,2 +1,2 @@
-# <a href="httрs://www.ifeelsoempty.github.io/adaptive-layout">Check this out here</a>
+# <a href="httрs://ifeelsoempty.github.io/adaptive-layout">Check this out here</a>
 Adaptive layout with slider 
