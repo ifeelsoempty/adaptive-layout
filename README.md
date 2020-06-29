@@ -1,3 +1,2 @@
-# adaptive-layout.github.io
+# ifeelsoempty.github.io/adaptive-layout/
 Adaptive layout with slider 
-ifeelsoempty.github.io/adaptive-layout/
