@@ -1,2 +1,2 @@
 # ifeelsoempty.github.io/adaptive-layout
-Adaptive layout with slider 
+Адаптивная верстка и слайдер (slide.js)
